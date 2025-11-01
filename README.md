@@ -6,23 +6,27 @@ A **practical, beginner-friendly reference** for foundational data analysis task
 
 ## 📘 Table of Contents
 
-1. [Prerequisites & Setup](#1-prerequisites--setup)
-2. [Imports & Reading Data](#2-imports--reading-data)
-3. [Quick Overview](#3-quick-overview)
-4. [Cleaning (NaNs, Duplicates, Renaming)](#4-cleaning-nans-duplicates-renaming)
-5. [Zero Counting](#5-zero-counting)
-6. [Selection & Filtering](#6-selection--filtering)
-7. [New Columns & Apply](#7-new-columns--apply)
-8. [Grouping & Aggregations](#8-grouping--aggregations)
-9. [Pivot Tables](#9-pivot-tables)
-10. [Sorting & Ranking](#10-sorting--ranking)
-11. [Merging / Joining](#11-merging--joining)
-12. [Saving Outputs](#12-saving-outputs)
-13. [Correlation Analysis](#13-correlation-analysis)
-14. [Plotting with Matplotlib](#14-plotting-with-matplotlib)
-15. [Plotting with Seaborn](#15-plotting-with-seaborn)
-16. [Common Gotchas](#16-common-gotchas)
-17. [Comprehensive Cheat Sheet](#17-comprehensive-cheat-sheet)
+### 🔗 Quick Navigation
+
+| Section                                                                              | Description                                        |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------- |
+| [1️⃣ Prerequisites & Setup](#🧩-1-prerequisites--setup)                              | Prepare your environment and install core packages |
+| [2️⃣ Imports & Reading Data](#📂-2-imports--reading-data)                            | Load and read datasets (CSV/Excel)                 |
+| [3️⃣ Quick Overview](#🔎-3-quick-overview)                                           | Inspect structure, types, and stats                |
+| [4️⃣ Cleaning (NaNs, Duplicates, Renaming)](#🧹-4-cleaning-nans-duplicates-renaming) | Handle missing values and clean columns            |
+| [5️⃣ Zero Counting](#🔢-5-zero-counting)                                             | Identify zero placeholders                         |
+| [6️⃣ Selection & Filtering](#🎯-6-selection--filtering)                              | Filter data by conditions                          |
+| [7️⃣ New Columns & Apply](#🧮-7-new-columns--apply)                                  | Create features and apply functions                |
+| [8️⃣ Grouping & Aggregations](#🧠-8-grouping--aggregations)                          | Summarize data per category                        |
+| [9️⃣ Pivot Tables](#🔁-9-pivot-tables)                                               | Transform long to wide format                      |
+| [🔟 Sorting & Ranking](#🏁-10-sorting--ranking)                                      | Sort and assign ranks                              |
+| [1️⃣1️⃣ Merging / Joining](#🔗-11-merging--joining)                                  | Combine datasets by key                            |
+| [1️⃣2️⃣ Saving Outputs](#💾-12-saving-outputs)                                       | Export cleaned results                             |
+| [1️⃣3️⃣ Correlation Analysis](#📈-13-correlation-analysis)                           | Analyze relationships                              |
+| [1️⃣4️⃣ Plotting with Matplotlib](#🎨-14-plotting-with-matplotlib)                   | Build customizable plots                           |
+| [1️⃣5️⃣ Plotting with Seaborn](#🌈-15-plotting-with-seaborn)                         | Create elegant visuals                             |
+| [1️⃣6️⃣ Common Gotchas](#⚠️-16-common-gotchas)                                       | Avoid common pandas traps                          |
+| [1️⃣7️⃣ Comprehensive Cheat Sheet](#🧾-17-comprehensive-cheat-sheet)                 | Full end-to-end workflow                           |
 
 ---
 
