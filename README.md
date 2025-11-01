@@ -4,33 +4,36 @@ A **practical, beginner-friendly reference** for foundational data analysis task
 
 ---
 
+
 ## 📘 Table of Contents
 
 ### 🔗 Quick Navigation
 
-| Section                                                                              | Description                                        |
-| ------------------------------------------------------------------------------------ | -------------------------------------------------- |
-| [1️⃣ Prerequisites & Setup](#🧩-1-prerequisites--setup)                              | Prepare your environment and install core packages |
-| [2️⃣ Imports & Reading Data](#📂-2-imports--reading-data)                            | Load and read datasets (CSV/Excel)                 |
-| [3️⃣ Quick Overview](#🔎-3-quick-overview)                                           | Inspect structure, types, and stats                |
-| [4️⃣ Cleaning (NaNs, Duplicates, Renaming)](#🧹-4-cleaning-nans-duplicates-renaming) | Handle missing values and clean columns            |
-| [5️⃣ Zero Counting](#🔢-5-zero-counting)                                             | Identify zero placeholders                         |
-| [6️⃣ Selection & Filtering](#🎯-6-selection--filtering)                              | Filter data by conditions                          |
-| [7️⃣ New Columns & Apply](#🧮-7-new-columns--apply)                                  | Create features and apply functions                |
-| [8️⃣ Grouping & Aggregations](#🧠-8-grouping--aggregations)                          | Summarize data per category                        |
-| [9️⃣ Pivot Tables](#🔁-9-pivot-tables)                                               | Transform long to wide format                      |
-| [🔟 Sorting & Ranking](#🏁-10-sorting--ranking)                                      | Sort and assign ranks                              |
-| [1️⃣1️⃣ Merging / Joining](#🔗-11-merging--joining)                                  | Combine datasets by key                            |
-| [1️⃣2️⃣ Saving Outputs](#💾-12-saving-outputs)                                       | Export cleaned results                             |
-| [1️⃣3️⃣ Correlation Analysis](#📈-13-correlation-analysis)                           | Analyze relationships                              |
-| [1️⃣4️⃣ Plotting with Matplotlib](#🎨-14-plotting-with-matplotlib)                   | Build customizable plots                           |
-| [1️⃣5️⃣ Plotting with Seaborn](#🌈-15-plotting-with-seaborn)                         | Create elegant visuals                             |
-| [1️⃣6️⃣ Common Gotchas](#⚠️-16-common-gotchas)                                       | Avoid common pandas traps                          |
-| [1️⃣7️⃣ Comprehensive Cheat Sheet](#🧾-17-comprehensive-cheat-sheet)                 | Full end-to-end workflow                           |
+| Section                                                                         | Description                                        |
+| ------------------------------------------------------------------------------- | -------------------------------------------------- |
+| [1️⃣ Prerequisites & Setup](#prerequisites--setup)                              | Prepare your environment and install core packages |
+| [2️⃣ Imports & Reading Data](#imports--reading-data)                            | Load and read datasets (CSV/Excel)                 |
+| [3️⃣ Quick Overview](#quick-overview)                                           | Inspect structure, types, and stats                |
+| [4️⃣ Cleaning (NaNs, Duplicates, Renaming)](#cleaning-nans-duplicates-renaming) | Handle missing values and clean columns            |
+| [5️⃣ Zero Counting](#zero-counting)                                             | Identify zero placeholders                         |
+| [6️⃣ Selection & Filtering](#selection--filtering)                              | Filter data by conditions                          |
+| [7️⃣ New Columns & Apply](#new-columns--apply)                                  | Create features and apply functions                |
+| [8️⃣ Grouping & Aggregations](#grouping--aggregations)                          | Summarize data per category                        |
+| [9️⃣ Pivot Tables](#pivot-tables)                                               | Transform long to wide format                      |
+| [🔟 Sorting & Ranking](#sorting--ranking)                                       | Sort and assign ranks                              |
+| [1️⃣1️⃣ Merging / Joining](#merging--joining)                                   | Combine datasets by key                            |
+| [1️⃣2️⃣ Saving Outputs](#saving-outputs)                                        | Export cleaned results                             |
+| [1️⃣3️⃣ Correlation Analysis](#correlation-analysis)                            | Analyze relationships                              |
+| [1️⃣4️⃣ Plotting with Matplotlib](#plotting-with-matplotlib)                    | Build customizable plots                           |
+| [1️⃣5️⃣ Plotting with Seaborn](#plotting-with-seaborn)                          | Create elegant visuals                             |
+| [1️⃣6️⃣ Common Gotchas](#common-gotchas)                                        | Avoid common pandas traps                          |
+| [1️⃣7️⃣ Comprehensive Cheat Sheet](#comprehensive-cheat-sheet)                  | Full end-to-end workflow                           |
 
 ---
 
-## 🧩 1) Prerequisites & Setup
+<a id="prerequisites--setup"></a>
+
+## 🧩 1️⃣ Prerequisites & Setup
 
 **Purpose:** prepare your environment so every notebook/script runs consistently.
 
@@ -50,6 +53,7 @@ pip install pandas numpy matplotlib seaborn
 
 ---
 
+<a id="imports--reading-data"></a>
 
 ## 📂 2) Imports & Reading Data
 
@@ -68,6 +72,7 @@ df = pd.read_csv("students.csv")   # load CSV file into DataFrame
 
 ---
 
+<a id="quick-overview"></a>
 ## 🔎 3) Quick Overview
 
 **Purpose:** understand structure, data types, and basic statistics.
@@ -110,6 +115,7 @@ df.head()
 
 ---
 
+<a id="cleaning-nans-duplicates-renaming"></a>
 ## 🧹 4) Cleaning (NaNs, Duplicates, Renaming)
 
 **Purpose:** handle missing data, duplicates, and rename columns.
@@ -151,6 +157,7 @@ df = df.dropna()
 
 ---
 
+<a id="zero-counting"></a>
 ## 🔢 5) Zero Counting
 
 **Purpose:** count zero values to detect placeholder entries.
@@ -187,6 +194,7 @@ math: 2  |  english: 1
 
 ---
 
+<a id="selection--filtering"></a>
 ## 🎯 6) Selection & Filtering
 
 **Purpose:** extract rows/columns based on conditions.
@@ -225,6 +233,7 @@ df_filtered = df[(df["age"] > 30) & df["city"].isin(["London", "Berlin"])]
 
 ---
 
+<a id="new-columns--apply"></a>
 ## 🧮 7) New Columns & Apply
 
 **Purpose:** engineer new features.
@@ -264,6 +273,7 @@ price  qty  total
 
 ---
 
+<a id="grouping--aggregations"></a>
 ## 🧠 8) Grouping & Aggregations
 
 **Purpose:** summarize metrics per group.
@@ -301,6 +311,7 @@ B         225   450  2
 
 ---
 
+<a id="pivot-tables"></a>
 ## 🔁 9) Pivot Tables
 
 **Purpose:** reshape data into summarized matrix.
@@ -338,6 +349,7 @@ South     20    25
 
 ---
 
+<a id="sorting--ranking"></a>
 ## 🏁 10) Sorting & Ranking
 
 **Purpose:** order and rank values.
@@ -375,6 +387,7 @@ B       150   3
 
 ---
 
+<a id="merging--joining"></a>
 ## 🔗 11) Merging / Joining
 
 **Purpose:** combine datasets.
@@ -412,6 +425,7 @@ id name  score
 
 ---
 
+<a id="saving-outputs"></a>
 ## 💾 12) Saving Outputs
 
 **Purpose:** export processed data.
@@ -437,6 +451,7 @@ File 'output.csv' successfully saved.
 
 ---
 
+<a id="correlation-analysis"></a>
 ## 📈 13) Correlation Analysis
 
 **Purpose:** evaluate relationships between numeric features.
@@ -474,6 +489,7 @@ z -0.82 -0.89  1.00
 ```
 ---
 
+<a id="plotting-with-matplotlib"></a>
 ## 🎨 14) Plotting with Matplotlib
 
 **Purpose:** create customizable visualizations.
@@ -506,6 +522,7 @@ plt.tight_layout(); plt.savefig("plots/14_bar.png", dpi=150); plt.show()
 
 ---
 
+<a id="plotting-with-seaborn"></a>
 ## 🌈 15) Plotting with Seaborn
 
 **Purpose:** quick, elegant, and statistical visualization.
@@ -542,6 +559,8 @@ g.savefig("plots/15_pairplot.png", dpi=150)
 
 
 ---
+
+<a id="common-gotchas"></a>
 ## ⚠️ 16) Common Gotchas
 
 **Purpose:** avoid pandas pitfalls.
@@ -585,6 +604,7 @@ age  flag
 
 ---
 
+<a id="comprehensive-cheat-sheet"></a>
 ## 🧾 17) Comprehensive Cheat Sheet
 
 **Purpose:** a full workflow to analyze any dataset from import to export.
